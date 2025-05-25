@@ -15,14 +15,9 @@ cp $HOME/rl-swarm/swarm.pem $HOME/
 ### 2. Clean and Clone Fresh Repo
 Remove the old project and clone the fresh version:
 ```bash
-rm -rf $HOME/rl-swarm
 cd $HOME && \
 rm -rf rl-swarm && \
-git clone https://github.com/xailong-6969/rl-swarm.git && \
-cd rl-swarm && \
-touch BACKUP.md README.md UPDATE.md backup.sh gensyn.sh && \
-chmod +x gensyn.sh && \
-./gensyn.sh
+git clone https://github.com/xailong-6969/rl-swarm.git
 ```
 
 ### 3. Restore `swarm.pem`
