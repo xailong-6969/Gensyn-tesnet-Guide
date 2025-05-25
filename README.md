@@ -16,11 +16,20 @@ cp $HOME/rl-swarm/swarm.pem $HOME/
 Remove the old project and clone the fresh version:
 ```bash
 rm -rf $HOME/rl-swarm
-git clone https://github.com/xailong-6969/rl-swarm
+cd $HOME && \
+rm -rf rl-swarm && \
+git clone https://github.com/xailong-6969/rl-swarm.git && \
+cd rl-swarm && \
+touch BACKUP.md README.md UPDATE.md backup.sh gensyn.sh && \
+chmod +x gensyn.sh && \
+./gensyn.sh
 ```
 
 ### 3. Restore `swarm.pem`
 Move the key file back into the cloned repo:
+```bash
+if you want to put your old swarm.pem then access your root folder then find rl-swarm folder after that put swarm.pem into it
+```
 ```bash
 cp $HOME/swarm.pem $HOME/rl-swarm/
 ```
