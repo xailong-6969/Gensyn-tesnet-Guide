@@ -72,7 +72,6 @@ sed -i -e 's/use_vllm: false/use_vllm: true/' \
    - nvidia/AceInstruct-1.5B
    - dnotitia/Smoothie-Qwen3-1.7B
    - Gensyn/Qwen2.5-1.5B-Instruct
-   - nvidia/Nemotron-Research-Reasoning-Qwen-1.5B
 
 ---
 
