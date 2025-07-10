@@ -7,7 +7,7 @@ Welcome to the **RL-Swarm** setup guide! This walkthrough helps you install and 
 ## 🧭 Prerequisites
 
 - ✅ `swarm.pem` key (backed up)
-- ✅ Git, Python 3, `screen`, and `npm` installed
+- ✅ Git, Python(3.10 min), `screen`, and `npm` installed
 - ✅ GPU (3090, 4090, or ≥24GB VRAM recommended)
 - ✅ CPU (arm64 or x86 CPU with minimum 32gb ram (note that if you run other applications during training it might crash training)
 
