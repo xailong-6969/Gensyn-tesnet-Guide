@@ -57,11 +57,14 @@ screen -S gensyn
 ---
 
 ### ⚡ 5. Enable High-VRAM Optimization
-
-For systems with ≥24GB VRAM (e.g. 3090/4090/A100/H100), enable high-performance mode:
+For systems with ≥24GB VRAM (e.g. 3090/4090/A100/H100)
+(Note: only for gpu setups)
 ```bash
-sed -i 's/use_vllm: false/use_vllm: true/' rgym_exp/config/rg-swarm.yaml && \
-sed -i 's/fp16: false/fp16: true/' rgym_exp/config/rg-swarm.yaml
+sed -i -e 's/use_vllm: false/use_vllm: true/' \
+       -e 's/fp16: false/fp16: true/' \
+       -e 's/gradient_checkpointing: false/gradient_checkpointing: true/' \
+       rgym_exp/config/rg-swarm.yaml
+
 ```
 
 ---
