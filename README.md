@@ -60,7 +60,7 @@ screen -S gensyn
 For systems with ≥24GB VRAM (e.g. 3090/4090/A100/H100)
 (Note: only for gpu setups)
 ```bash
-`sed -i '' -e 's/use_vllm: false/use_vllm: true/' -e 's/fp16: false/fp16: true/' -e 's/gradient_checkpointing: false/gradient_checkpointing: true/' -e 's/num_generations: 2/num_generations: 1/' rgym_exp/config/rg-swarm.yaml`
+sed -i -e 's/use_vllm: false/use_vllm: true/' -e 's/fp16: false/fp16: true/' -e 's/gradient_checkpointing: false/gradient_checkpointing: true/' -e 's/num_generations: 2/num_generations: 1/' ./rgym_exp/config/rg-swarm.yaml
 
 ```
 ### ⚡ Models:
