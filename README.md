@@ -66,6 +66,13 @@ sed -i -e 's/use_vllm: false/use_vllm: true/' \
        rgym_exp/config/rg-swarm.yaml
 
 ```
+### ⚡ Models:
+   - Gensyn/Qwen2.5-0.5B-Instruct
+   - Qwen/Qwen3-0.6B
+   - nvidia/AceInstruct-1.5B
+   - dnotitia/Smoothie-Qwen3-1.7B
+   - Gensyn/Qwen2.5-1.5B-Instruct
+   - nvidia/Nemotron-Research-Reasoning-Qwen-1.5B
 
 ---
 
